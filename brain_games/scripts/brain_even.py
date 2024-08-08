@@ -1,42 +1,23 @@
 #!/usr/bin/env python3
 
-import prompt
+
 from random import randint
+from brain_games.game_engine import game_engine
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    correct_answers = 0
-    while correct_answers < 3:
-        if is_answer_correct():
-            correct_answers += 1
-        else:
-            print(f'Let\'s try again, {name}!')
-            break
-    if correct_answers == 3:
-        print(f'Congratulations, {name}!')
+    game_engine(brain_even)
 
 
-def is_answer_correct():
+def brain_even():
     MIN_NUMBER = 1
     MAX_NUMBER = 100
     number_to_quess = randint(MIN_NUMBER, MAX_NUMBER)
-    print(f'Question: {number_to_quess}')
-    answer = prompt.string('Your answer: ')
     if is_even(number_to_quess):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    if answer == correct_answer:
-        print('Correct!')
-        return True
-    else:
-        print(f'{answer} is wrong answer ;(.'
-              f'Correct answer was {correct_answer}.')
-        return False
+    return number_to_quess, correct_answer
 
 
 def is_even(number):
