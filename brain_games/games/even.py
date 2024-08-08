@@ -1,9 +1,12 @@
 from random import randint
 
 
-def even():
-    MIN_NUMBER = 1
-    MAX_NUMBER = 100
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+EVEN_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def get_even_answers():
     number_to_quess = randint(MIN_NUMBER, MAX_NUMBER)
     if is_even(number_to_quess):
         correct_answer = 'yes'
