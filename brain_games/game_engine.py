@@ -1,13 +1,13 @@
 import prompt
 
 
-def game_engine(game_rule, game_type):
+def game_engine(game_description, game_type):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     MAX_ROUNDS = 3
     correct_answers = 0
-    print(game_rule)
+    print(game_description)
     while correct_answers < MAX_ROUNDS:
         game_question, game_answer = game_type()
         print(f'Question: {game_question}')
