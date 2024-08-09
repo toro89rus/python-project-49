@@ -18,3 +18,6 @@ lint:
 
 package-reinstall:
 	python3 -m pip install --force-reinstall dist/*.whl
+
+package-uninstall:
+	python3 -m pip uninstall hexlet-code
