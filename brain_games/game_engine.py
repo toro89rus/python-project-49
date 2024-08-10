@@ -1,23 +1,23 @@
 import prompt
 
 
-def game_engine(game_description, game_type):
+def run_game(game_type):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     MAX_ROUNDS = 3
     correct_answers = 0
-    print(game_description)
+    print(game_type.DESCRIPTION)
     while correct_answers < MAX_ROUNDS:
-        game_question, game_answer = game_type()
-        print(f'Question: {game_question}')
+        question, correct_answer = game_type.get_question_and_answer()
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
-        if user_answer == game_answer:
+        if user_answer == correct_answer:
             print('Correct!')
             correct_answers += 1
         else:
             print(f'{user_answer} is wrong answer ;(.'
-                  f'Correct answer was {game_answer}.')
+                  f'Correct answer was {correct_answer}.')
             print(f'Let\'s try again, {name}!')
             break
     if correct_answers == 3:
