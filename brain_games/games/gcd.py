@@ -15,4 +15,5 @@ def get_question_and_answer():
             first_num = first_num % second_num
         else:
             second_num = second_num % first_num
-    return question, str(first_num + second_num)
+    correct_answer = str(first_num + second_num)
+    return question, correct_answer

@@ -17,6 +17,7 @@ def get_question_and_answer():
     for step_count in range(randint(PROGRESSION_MIN_LEN, PROGRESSION_MAX_LEN)):
         progression.append(str(element + step_count * progression_step))
     secret_element_index = randint(0, len(progression) - 1)
-    answer = progression[secret_element_index]
+    correct_answer = progression[secret_element_index]
     progression[secret_element_index] = '..'
-    return ' '.join(progression), answer
+    question = ' '.join(progression)
+    return question, correct_answer
