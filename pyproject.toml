@@ -11,7 +11,7 @@ classifiers = [
 	"Development Status :: 4 - Beta",
 	"Intended Audience :: End Users/Desktop",
 	"Natural Language :: English",
-	"Programming Language :: Python :: 3.12"
+	"Programming Language :: Python :: 3.12",
 	"Topic :: Games/Entertainment :: Puzzle Games"
 ]
 repository = "https://github.com/toro89rus/python-project-49"
