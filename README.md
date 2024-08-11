@@ -61,19 +61,20 @@ make package-uninstall-venv
 make package-uninstall-pipx
 ```
 
+### Instalattion
+[![asciicast](https://asciinema.org/a/A3UwDGd4VP1CoXloCrwQ5fTVA.svg)](https://asciinema.org/a/A3UwDGd4VP1CoXloCrwQ5fTVA)
 
-### ASCIINEMA brain-even
-[![asciicast](https://asciinema.org/a/ZcKBL4BOzL3Kf9uOdWLLiiFac.svg)](https://asciinema.org/a/ZcKBL4BOzL3Kf9uOdWLLiiFac)
+### Brain-Even
+[![asciicast](https://asciinema.org/a/CPOBdYlQhqucomlfZnK6woCf7.svg)](https://asciinema.org/a/CPOBdYlQhqucomlfZnK6woCf7)
 
-### ASCIINEMA brain-calc
-[![asciicast](https://asciinema.org/a/Jq4HjG82pacJBDS04WtxtYZEB.svg)](https://asciinema.org/a/Jq4HjG82pacJBDS04WtxtYZEB)
+### Brain-Calc
+[![asciicast](https://asciinema.org/a/59E27Om0bXueNZVvgPRQnknQd.svg)](https://asciinema.org/a/59E27Om0bXueNZVvgPRQnknQd)
 
-### ASCIINEMA brain-gcd
-[![asciicast](https://asciinema.org/a/NMZqFUNJHmPrye2Fnbd0z2sLa.svg)](https://asciinema.org/a/NMZqFUNJHmPrye2Fnbd0z2sLa)
+### Brain-GCD
+[![asciicast](https://asciinema.org/a/kqu2RQAVpIU36a0Il3W38lWxx.svg)](https://asciinema.org/a/kqu2RQAVpIU36a0Il3W38lWxx)
 
-### ASCIINEMA brain-progression
-[![asciicast](https://asciinema.org/a/tAVwpaYyOOUZwMO5FmSOufTqG.svg)](https://asciinema.org/a/tAVwpaYyOOUZwMO5FmSOufTqG)
+### Brain-Progression
+[![asciicast](https://asciinema.org/a/YZQCSKShHmorferGycLBnOa5m.svg)](https://asciinema.org/a/YZQCSKShHmorferGycLBnOa5m)
 
-
-### ASCIINEMA brain-progression brain-prime
-[![asciicast](https://asciinema.org/a/3dp9MhVpqR2FBmSWaQv1EJ05S.svg)](https://asciinema.org/a/3dp9MhVpqR2FBmSWaQv1EJ05S)
+### Brain-Prime
+[![asciicast](https://asciinema.org/a/szbC6XSRZrjQMnO8JjQiP7TUl.svg)](https://asciinema.org/a/szbC6XSRZrjQMnO8JjQiP7TUl)
