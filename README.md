@@ -46,7 +46,7 @@ make build
 make package-install-pipx
 ```
 
-#How to uninstall
+## How to uninstall
 Use one of these commands according to the one you used for installation:
 
 ```
