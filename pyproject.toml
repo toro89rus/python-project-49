@@ -1,12 +1,20 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
-description = ""
+version = "0.6.3"
+description = "Set of console games to test your mathematical skills"
 authors = ["toro <timofey89rus@gmail.com>"]
 readme = "README.md"
 packages = [
 	{ include = "brain_games" },
 ]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Intended Audience :: End Users/Desktop",
+	"Natural Language :: English",
+	"Programming Language :: Python :: 3.12"
+	"Topic :: Games/Entertainment :: Puzzle Games"
+]
+repository = "https://github.com/toro89rus/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.12"
