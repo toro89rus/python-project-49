@@ -7,13 +7,17 @@ MAX_NUMBER = 100
 
 
 def get_question_and_answer():
-    first_num = randint(MIN_NUMBER, MAX_NUMBER)
-    second_num = randint(MIN_NUMBER, MAX_NUMBER)
-    question = f'{first_num} {second_num}'
-    while first_num != 0 and second_num != 0:
-        if first_num > second_num:
-            first_num = first_num % second_num
-        else:
-            second_num = second_num % first_num
-    correct_answer = str(first_num + second_num)
+    num1 = randint(MIN_NUMBER, MAX_NUMBER)
+    num2 = randint(MIN_NUMBER, MAX_NUMBER)
+    question = f'{num1} {num2}'
+    correct_answer = str(get_greatest_common_divisor(num1, num2))
     return question, correct_answer
+
+
+def get_greatest_common_divisor(num1, num2):
+    while num1 != 0 and num2 != 0:
+        if num1 > num2:
+            num1 = num1 % num2
+        else:
+            num2 = num2 % num1
+    return num1 + num2
