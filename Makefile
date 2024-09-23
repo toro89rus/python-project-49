@@ -1,6 +1,12 @@
 install:
 	poetry install
 
+test:
+	poetry run pytest
+
+cov:
+	poetry run pytest --cov=brain_games --cov-report term-missing
+
 brain-games:
 	poetry run brain-games
 
@@ -18,7 +24,7 @@ package-install-venv:
 
 package-install-pipx:
 	pipx install dist/*.whl
-	
+
 lint:
 	poetry run flake8 brain_games
 
@@ -30,5 +36,5 @@ package-uninstall-venv:
 
 package-uninstall-pipx:
 	pipx uninstall hexlet-code
-	
+
 
