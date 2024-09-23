@@ -6,7 +6,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 
-def get_question_and_answer():
+def get_question_and_answer() -> tuple[str, str]:
     num1 = randint(MIN_NUMBER, MAX_NUMBER)
     num2 = randint(MIN_NUMBER, MAX_NUMBER)
     question = f'{num1} {num2}'
@@ -14,7 +14,7 @@ def get_question_and_answer():
     return question, correct_answer
 
 
-def get_greatest_common_divisor(num1, num2):
+def get_greatest_common_divisor(num1: int, num2: int) -> int:
     while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 = num1 % num2

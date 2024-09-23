@@ -6,7 +6,7 @@ MAX_NUMBER = 100
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def get_question_and_answer():
+def get_question_and_answer() -> tuple[str, str]:
     first_num = randint(MIN_NUMBER, MAX_NUMBER)
     second_num = randint(MIN_NUMBER, MAX_NUMBER)
     operation = choice(OPERATORS)

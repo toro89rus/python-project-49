@@ -6,16 +6,16 @@ MAX_NUMBER = 100
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_question_and_answer():
+def get_question_and_answer() -> tuple[str, str]:
     question = randint(MIN_NUMBER, MAX_NUMBER)
     if is_prime(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return question, correct_answer
+    return str(question), correct_answer
 
 
-def is_prime(number):
+def is_prime(number: int) -> bool:
     if number < 2:
         return False
     max_divisor = int(sqrt(number) + 1)
