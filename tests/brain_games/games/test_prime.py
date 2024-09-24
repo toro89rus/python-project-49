@@ -15,7 +15,7 @@ def test_is_prime():
 
 def test_prime_get_question_and_answer():
     random.seed(0)
-    assert prime.get_question_and_answer() == (50, 'no')
+    assert prime.get_question_and_answer() == ('50', 'no')
 
     random.seed(3)
-    assert prime.get_question_and_answer() == (31, "yes")
+    assert prime.get_question_and_answer() == ('31', "yes")
