@@ -1,40 +1,21 @@
 install:
-	poetry install
-
-test:
-	poetry run pytest
-
-cov:
-	poetry run pytest --cov=brain_games --cov-report term-missing
-
-brain-games:
-	poetry run brain-games
-
-build:
-	poetry build
-
-publish:
-	poetry publish --dry-run
-
-package-install:
-	python3 -m pip install --user dist/*.whl
-
-package-install-venv:
-	python3 -m pip install dist/*.whl
-
-package-install-pipx:
-	pipx install dist/*.whl
+	uv sync
 
 lint:
-	poetry run ruff check brain_games
+	uv run ruff check brain_games
+
+test:
+	uv run pytest
+
+cov:
+	uv run pytest --cov=brain_games --cov-report term-missing
+
+build:
+	uv build
+
+package-install:
+	uv tool install dist/*.whl
 
 package-uninstall:
-	python3 -m pip uninstall --user hexlet-code
-
-package-uninstall-venv:
-	python3 -m pip uninstall hexlet-code
-
-package-uninstall-pipx:
-	pipx uninstall hexlet-code
-
+	uv tool uninstall hexlet-code
 
