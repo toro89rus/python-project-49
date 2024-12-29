@@ -51,7 +51,7 @@ wheels = [
 [[package]]
 name = "hexlet-code"
 version = "0.6.3"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "prompt" },
 ]
