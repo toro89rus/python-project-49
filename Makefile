@@ -10,6 +10,9 @@ test:
 cov:
 	uv run pytest --cov=brain_games --cov-report term-missing
 
+brain-games:
+	uv run brain-games
+
 build:
 	uv build
 
