@@ -1,5 +1,6 @@
-import brain_games.games.gcd as gcd
 import random
+
+import brain_games.games.gcd as gcd
 
 
 def test_gcd_get_greatest_common_divisor():

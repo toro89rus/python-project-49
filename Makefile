@@ -26,7 +26,7 @@ package-install-pipx:
 	pipx install dist/*.whl
 
 lint:
-	poetry run flake8 brain_games
+	poetry run ruff check brain_games
 
 package-uninstall:
 	python3 -m pip uninstall --user hexlet-code

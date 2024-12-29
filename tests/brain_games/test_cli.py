@@ -1,5 +1,6 @@
-from brain_games.cli import welcome_user
 from io import StringIO
+
+from brain_games.cli import welcome_user
 
 
 def test_welcome_user(monkeypatch, capfd):

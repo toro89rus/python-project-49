@@ -1,5 +1,6 @@
-import brain_games.games.progression as progression
 import random
+
+import brain_games.games.progression as progression
 
 
 def test_progression_get_question_and_answer():

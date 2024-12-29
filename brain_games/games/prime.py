@@ -1,5 +1,5 @@
-from random import randint
 from math import sqrt
+from random import randint
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100

@@ -1,4 +1,4 @@
-from random import randint, choice
+from random import choice, randint
 
 OPERATORS = ('+', '-', '*')
 MIN_NUMBER = 0

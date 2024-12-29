@@ -1,6 +1,5 @@
 from random import randint
 
-
 DESCRIPTION = "What number is missing in the progression?"
 PROGRESSION_MIN_LEN = 5
 PROGRESSION_MAX_LEN = 11
@@ -15,8 +14,10 @@ def get_question_and_answer() -> tuple[str, str]:
     progression_step = randint(PROGRESSION_MIN_STEP, PROGRESSION_MAX_STEP)
     element = randint(MIN_FIRST_NUM, MAX_FIRST_NUM)
     progression_len = randint(PROGRESSION_MIN_LEN, PROGRESSION_MAX_LEN)
-    for step_count in range(progression_len):
-        progression.append(str(element + step_count * progression_step))
+    progression = [
+        str(element + step_count * progression_step)
+        for step_count in range(progression_len)
+    ]
     secret_element_index = randint(0, len(progression) - 1)
     correct_answer = progression[secret_element_index]
     progression[secret_element_index] = ".."

@@ -1,5 +1,6 @@
-import brain_games.games.prime as prime
 import random
+
+import brain_games.games.prime as prime
 
 
 def test_is_prime():

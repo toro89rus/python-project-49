@@ -1,5 +1,6 @@
-import brain_games.games.calc as calc
 import random
+
+import brain_games.games.calc as calc
 
 
 def test_calc_get_question_and_answer():

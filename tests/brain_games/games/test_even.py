@@ -1,5 +1,6 @@
-import brain_games.games.even as even
 import random
+
+import brain_games.games.even as even
 
 
 def test_even_get_question_and_answer():
