@@ -20,39 +20,32 @@ Test your logic and mathematical skills in 5 different games.
 
 ## Requirements
 
+for Docker usage:
+
+- Docker
+
+for local installation:
+
 - Python 3.09
-- Poetry
+- uv
 - make
-- pip
 
-For Debian 12+ or Ubuntu 23 +:
+## Docker Use
 
-- venv or pipx (read installation for details)
+Make sure docker is [installed](https://docs.docker.com/engine/install/)
 
-## How to install
+``` bash
+docker run --rm -it toro89/brain_games:latest *game_name*
+```
+
+## How to install locally
+
+Make sure uv is [installed](https://docs.astral.sh/uv/getting-started/installation/)
 
 ``` bash
 git clone git@github.com:toro89rus/python-project-49.git
 make build
 make package-install
-```
-
-Due to limitations of using pip to install (including install --user) packages on Debian 12+ or Ubuntu 23+ (see [details](https://packaging.python.org/en/latest/specifications/externally-managed-environments/#externally-managed-environments)) there are two ways of installing Brain Games if you are are using one of these operation systems:
-
-- using virtual enviroment. Make sure venv is [installed in your system](https://virtualenv.pypa.io/en/latest/installation.html). Don't forget to activate your venv before installation.
-
-```bash
-git clone git@github.com:toro89rus/python-project-49.git
-make build
-make package-install-venv
-```
-
-- if you don't know how to use venv, you can install Brain Games via pipx, which will automatically create a virtual environment for you and install Brain Games there. Make sure pipx is [installed in your system](https://pipx.pypa.io/stable/installation/)
-
-``` bash
-git clone git@github.com:toro89rus/python-project-49.git
-make build
-make package-install-pipx
 ```
 
 ## How to uninstall
@@ -62,18 +55,6 @@ Use one of these commands according to the one you used for installation:
 ``` bash
 make package-uninstall
 ```
-
-``` bash
-make package-uninstall-venv
-```
-
-``` bash
-make package-uninstall-pipx
-```
-
-### Instalattion
-
-[![asciicast](https://asciinema.org/a/A3UwDGd4VP1CoXloCrwQ5fTVA.svg)](https://asciinema.org/a/A3UwDGd4VP1CoXloCrwQ5fTVA)
 
 ### Brain-Even
 

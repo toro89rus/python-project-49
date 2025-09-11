@@ -19,6 +19,9 @@ build:
 package-install:
 	uv tool install dist/*.whl
 
+docker-package-install:
+	uv pip install --system dist/*.whl
+
 package-uninstall:
 	uv tool uninstall hexlet-code
 
